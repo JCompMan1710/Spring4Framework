@@ -10,15 +10,7 @@ pageEncoding="ISO-8859-1"%>
 <body>
 	<center>
 		<h3>
-			<a href="hello">Hello World</a>
-		</h3>
-		
-		<h3>
-			<a href="employee">Employee List</a>
-		</h3>
-		
-		<h3>
-			<a href="showEmployeeForm">Add Employee</a>
+			<a href="hello">Welcome Page</a>
 		</h3>
 	</center>
 </body>

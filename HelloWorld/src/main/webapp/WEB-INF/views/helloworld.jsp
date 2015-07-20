@@ -10,7 +10,7 @@
     <body>
         <%@ include file="menu.jsp" %>
         <div style="text-align:center">
-            <h2>Hello World</h2>
+            <h2></h2>
             <h2>
                 ${message} 
             </h2>

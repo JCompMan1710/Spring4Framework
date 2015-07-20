@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HelloWorldController {
 
-	String message = "Welcome to Spring MVC!";
+	String message = "Welcome to John Stephenson's Web Page!";
 
 	@RequestMapping("/hello")
 	public ModelAndView showMessage() {

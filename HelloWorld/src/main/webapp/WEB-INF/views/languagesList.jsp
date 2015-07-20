@@ -5,22 +5,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-        <title>How to Contact John</title>
+        <title>Languages written by John</title>
     </head>
     <body>
         <%@ include file="/WEB-INF/views/menu.jsp" %>
         <div style="text-align:center">
-            <h2>E-Mail</h2>
-            <br><br>
-            <tr>
-                <td>
-                    <h2>Social Media: </h2>
-                </td>
-                <h5>LinkedIn: </h5>
-                <h5>Facebook</h5>
-            </tr>
-            <h2>Mobile Phone</h2>
-            <h2>Land-Line</h2>
+            <c:forEach items="${languagesList}" var="languages">
+                ${languages.id}: ${languages.technology}, ${languages.language}<br>
+            </c:forEach>
         </div>
     </body>
 </html>

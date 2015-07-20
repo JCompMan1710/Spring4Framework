@@ -10,7 +10,8 @@
     <body>
         <%@ include file="/WEB-INF/views/menu.jsp" %>
         <div style="text-align:center">
-
+            <tr>For JSF tutorials <a href="jsf.jsp">Click Here</a></tr><p></p>
+            <tr>For Spring tutorials <a href="spring.jsp">Click Here</a></tr>
         </div>
     </body>
 </html>

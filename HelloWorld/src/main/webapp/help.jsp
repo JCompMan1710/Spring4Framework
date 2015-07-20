@@ -10,7 +10,10 @@
     <body>
         <%@ include file="/WEB-INF/views/menu.jsp" %>
         <div style="text-align:center">
-
+            <br><br><br>
+            <a href="jsf.jsp">JSF</a>
+                <p></p>
+            <a href="spring.jsp">Spring</a>
         </div>
     </body>
 </html>
