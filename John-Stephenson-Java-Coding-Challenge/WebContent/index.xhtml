@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>John Stephenson Java Challenge</title>
+        <link href="./css/styles.css" rel="stylesheet" type="text/css"/> 
+    </h:head>
+    <h:body>
+        <div align="center">
+            <h1 class="title">Department Choices</h1>
+            <br/>
+            <fieldset>
+                <legend>Department Selection</legend>
+                <h:form>
+                Developer:
+                    <h:inputText value="#{sumBean.num1Sum}"/>
+                X:
+                    <h:inputText readonly = "#{facesContext.renderResponse}" value="#{sumBean.num2Sum}"/>
+                <br></br>
+                QA Tester:
+                    <h:inputText value="#{sumBean.num3Sum}"/>
+                X:
+                    <h:inputText readonly = "#{facesContext.renderResponse}" value="#{sumBean.num4Sum}"/>
+                <br></br>
+                Manager:
+                    <h:inputText value="#{sumBean.num5Sum}"/>
+                X:
+                    <h:inputText readonly = "#{facesContext.renderResponse}" value="#{sumBean.num6Sum}"/>
+                <br></br><br></br>
+                <h:commandButton value="Compute Sum">
+                    <f:ajax execute="@form" render="sumResult"/>
+                </h:commandButton>
+                <h2>Result: 
+                    <h:outputText value="#{sumBean.sum}" id="sumResult"/>
+                </h2>
+                </h:form>
+            </fieldset>
+        </div>
+    </h:body>
+</html>
